@@ -9,7 +9,7 @@ curl -sf https://$1/v2/_catalog | jq  -r '.["repositories"] | .[]' > repo_list
 while read REPO
 do
   echo -n >tag_list
-  curl -sf https://hub.core.tf/v2/$REPO/tags/list | jq -r '.["tags"] | .[]' > tag_list
+  curl -sf https://$1/v2/$REPO/tags/list | jq -r '.["tags"] | .[]' > tag_list
   while read TAG
   do
     echo ${REPO}:${TAG}
