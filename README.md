@@ -1,4 +1,4 @@
-# docker-registry-ls
+# aaaler/registry-ls
 list docker reigistry's repos with tags. v2 only.
 
 example usage:
