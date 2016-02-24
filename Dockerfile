@@ -7,5 +7,6 @@ RUN apk add --update \
 
 WORKDIR /
 COPY docker-registry-ls.sh /
+RUN chmod +x /docker-registry-ls.sh
 
-CMD ["docker-registry-ls.sh"]
+ENTRYPOINT ["/docker-registry-ls.sh"]
