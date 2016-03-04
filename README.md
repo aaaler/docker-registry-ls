@@ -1,5 +1,5 @@
 # aaaler/registry-ls
-list docker reigistry's repos with tags. v2 only.
+list docker private reigistry's repos with tags. 
 
 example usage:
 ```
